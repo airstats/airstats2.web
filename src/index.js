@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App.js'
+import registerServiceWorker from './registerServiceWorker'
+import configureStore from './store/configureStore.js'
+import Immutable from 'immutable'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const store = configureStore(Immutable.Map())
+
+ReactDOM.render(<App store={store} />, document.getElementById('root'))
+
+registerServiceWorker()
