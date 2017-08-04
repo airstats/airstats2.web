@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux-immutable'
+import fake from './fake'
 
-const app = combineReducers({})
+const app = combineReducers({fake})
 
 export default app

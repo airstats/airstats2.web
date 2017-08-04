@@ -4,6 +4,7 @@ import App from './App.js'
 import registerServiceWorker from './registerServiceWorker'
 import configureStore from './store/configureStore.js'
 import Immutable from 'immutable'
+import './semantic.min.css'
 
 const store = configureStore(Immutable.Map())
 

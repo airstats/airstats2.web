@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@menuBorder: #000000;
+@menuBorderRadius: 5px;

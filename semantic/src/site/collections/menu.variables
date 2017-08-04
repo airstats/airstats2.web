@@ -1,0 +1,8 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@dropdownItemBackground: @darkblue;
+@dropdownHoveredItemBackground: @blue;
+@dropdownItemColor: @white;
+@dropdownHoveredItemColor: @white;
