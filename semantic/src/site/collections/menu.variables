@@ -6,3 +6,4 @@
 @dropdownHoveredItemBackground: @blue;
 @dropdownItemColor: @white;
 @dropdownHoveredItemColor: @white;
+@borderRadius: 0;
