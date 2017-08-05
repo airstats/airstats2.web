@@ -7,7 +7,7 @@ import './Header.scss'
 export default class Header extends React.Component {
   render () {
     return (
-      <div className='blueHeader'>
+      <section className='blueHeader'>
         <Container>
           <Grid stackable>
             <Grid.Column color='blue' width={2}><Image height='50' src={logo} style={{
@@ -17,7 +17,7 @@ export default class Header extends React.Component {
           </Grid>
         </Container>
         <NavBar />
-      </div>
+      </section>
     )
   }
 }
