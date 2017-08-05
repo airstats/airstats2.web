@@ -13,7 +13,7 @@ class NavBar extends Component {
     return (
       <Menu size='large' inverted stackable>
         <Container>
-          <Menu.Item as='a' header fitted>
+          <Menu.Item header fitted>
             <Image height='50' src={logo} style={{
               marginRight: '1.5em'
             }}/>
