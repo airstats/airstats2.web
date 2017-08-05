@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Container, Dropdown, Image, Input, Menu} from 'semantic-ui-react'
+import {Container, Dropdown, Menu} from 'semantic-ui-react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router'
 import {Link} from 'react-router-dom'

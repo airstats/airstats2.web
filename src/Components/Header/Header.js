@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
-import {Container, Grid, Image, Input, Menu} from 'semantic-ui-react'
+import {Container, Grid, Image, Input} from 'semantic-ui-react'
 import logo from './logo.png'
 import './Header.scss'
 
