@@ -1,0 +1,14 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@dropdownItemBackground: @darkblue;
+@dropdownHoveredItemBackground: @blue;
+@dropdownItemColor: @white;
+@dropdownHoveredItemColor: @white;
+@borderRadius: 0;
+@invertedBackground: linear-gradient(#002F5D, #002F5D 60%, #021624);
+@invertedHoverBackground: @invertedBackground;
+@invertedHoverColor: @white;
+@invertedHoverBorderBottomColor: @orange;
+@dropdownMenuDistance: 2px;
