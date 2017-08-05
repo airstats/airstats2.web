@@ -1,3 +1,16 @@
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.link.inverted.menu .item:hover,
+.ui.inverted.menu .dropdown.item:hover,
+.ui.inverted.menu .link.item:hover,
+.ui.inverted.menu a.item:hover {
+  background: @invertedHoverBackground;
+  color: @invertedHoverColor;
+  border-bottom: 2px solid @invertedHoverBorderBottomColor;
+}
+
+.ui.menu .ui.dropdown .menu > .item:hover {
+  border-bottom: 0;
+}

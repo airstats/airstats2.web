@@ -16,7 +16,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Menu size='large' color='blue' inverted>
+      <Menu size='large' inverted>
         <Container>
           <Menu.Item as='a' header fitted>
             <Image height='50' src={logo} style={{marginRight: '1.5em'}} />
