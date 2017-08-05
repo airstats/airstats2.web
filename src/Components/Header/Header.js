@@ -9,7 +9,7 @@ export default class Header extends React.Component {
     return (
       <div className='blueHeader'>
         <Container>
-          <Grid>
+          <Grid stackable>
             <Grid.Column color='blue' width={2}><Image height='50' src={logo} style={{
               marginRight: '1.5em'
             }} /></Grid.Column>
