@@ -8,7 +8,7 @@
 .ui.inverted.menu a.item:hover {
   background: @invertedHoverBackground;
   color: @invertedHoverColor;
-  border-bottom: 2px solid @invertedHoverBorderBottomColor;
+  border-bottom: @dropdownMenuDistance solid @invertedHoverBorderBottomColor;
 }
 
 .ui.menu .ui.dropdown .menu > .item:hover {

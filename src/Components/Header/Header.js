@@ -1,10 +1,5 @@
 import React, {Component} from 'react'
-import {
-  Container,
-  Dropdown,
-  Image,
-  Menu,
-} from 'semantic-ui-react'
+import {Container, Dropdown, Image, Input, Menu} from 'semantic-ui-react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router'
 import {Link} from 'react-router-dom'
@@ -16,10 +11,12 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Menu size='large' inverted>
+      <Menu size='large' inverted stackable>
         <Container>
           <Menu.Item as='a' header fitted>
-            <Image height='50' src={logo} style={{marginRight: '1.5em'}} />
+            <Image height='50' src={logo} style={{
+              marginRight: '1.5em'
+            }}/>
           </Menu.Item>
 
           <Menu.Item as={Link} to='/'>Home</Menu.Item>
@@ -37,6 +34,7 @@ class NavBar extends Component {
             </Dropdown.Menu>
           </Dropdown>
           <Menu.Item as='a' href='https://www.aircharts.org' target='_blank'>AirCharts</Menu.Item>
+          <Menu.Item><Input action={{color: 'orange', icon: 'search'}} placeholder='Search Callsign, CID, Apt' /></Menu.Item>
         </Container>
       </Menu>
     )
