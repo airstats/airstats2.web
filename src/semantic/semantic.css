@@ -17984,7 +17984,7 @@ ol.ui.horizontal.list li:before,
   min-width: calc(100% - 1px);
   border-radius: 0em 0em 0 0;
   background: #FFFFFF;
-  margin: 2px 0px 0px;
+  margin: 3px 0px 0px;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
   -webkit-box-orient: vertical !important;
@@ -18069,7 +18069,7 @@ ol.ui.horizontal.list li:before,
 .ui.vertical.menu .dropdown.item .menu {
   left: 100%;
   min-width: 0;
-  margin: 0em 0em 0em 2px;
+  margin: 0em 0em 0em 3px;
   -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
   border-radius: 0em 0 0 0;
@@ -19262,9 +19262,9 @@ Floated Menu / Item
 
 .ui.inverted.menu {
   border: 0px solid transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(60%, #002F5D), to(#021624));
-  background: -webkit-linear-gradient(#002F5D, #002F5D 60%, #021624);
-  background: linear-gradient(#002F5D, #002F5D 60%, #021624);
+  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(40%, #002F5D), to(#021624));
+  background: -webkit-linear-gradient(#002F5D, #002F5D 40%, #021624);
+  background: linear-gradient(#002F5D, #002F5D 40%, #021624);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -19320,9 +19320,9 @@ Floated Menu / Item
 .ui.inverted.menu .dropdown.item:hover,
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(60%, #002F5D), to(#021624));
-  background: -webkit-linear-gradient(#002F5D, #002F5D 60%, #021624);
-  background: linear-gradient(#002F5D, #002F5D 60%, #021624);
+  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(40%, #002F5D), to(#021624));
+  background: -webkit-linear-gradient(#002F5D, #002F5D 40%, #021624);
+  background: linear-gradient(#002F5D, #002F5D 40%, #021624);
   color: #FFFFFF;
 }
 
@@ -20042,11 +20042,18 @@ Floated Menu / Item
 .ui.inverted.menu .dropdown.item:hover,
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(60%, #002F5D), to(#021624));
-  background: -webkit-linear-gradient(#002F5D, #002F5D 60%, #021624);
-  background: linear-gradient(#002F5D, #002F5D 60%, #021624);
+  background: -webkit-gradient(linear, left top, left bottom, from(#002F5D), color-stop(40%, #002F5D), to(#021624));
+  background: -webkit-linear-gradient(#002F5D, #002F5D 40%, #021624);
+  background: linear-gradient(#002F5D, #002F5D 40%, #021624);
   color: #FFFFFF;
-  border-bottom: 2px solid #F2711C;
+  border-bottom: 3px solid #F2711C;
+}
+
+.ui.inverted.menu .item,
+.ui.inverted.menu .item > a:not(.ui) {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom: 3px solid transparent;
 }
 
 .ui.menu .ui.dropdown .menu > .item:hover {
@@ -23423,7 +23430,7 @@ Floated Menu / Item
   -webkit-box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
   box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
   border: #000000;
-  border-radius: 5px;
+  border-radius: 0;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
   z-index: 11;

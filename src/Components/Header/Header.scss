@@ -1,0 +1,8 @@
+.blueHeader {
+  background-color: #002f5d;
+  .ui.grid {
+    &>.column:not(.row) {
+      padding-bottom: 0;
+    }
+  }
+}
