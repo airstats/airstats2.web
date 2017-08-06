@@ -1,0 +1,57 @@
+.tablerecentflights {
+  border-collapse: collapse;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  > tbody > tr {
+    border-bottom: 1px solid rgb(255,255,255);
+    > td {
+      padding: 0;
+      margin: 0;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      color: white;
+
+      &:first-child {
+        padding-left: 5px;
+        padding-right: 15px;
+      }
+      &:last-child {
+        padding-right: 5px;
+      }
+    }
+
+    .dep {
+      text-align: right;
+    }
+
+    .arrow {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.recentbox {
+  background-image: url('./metro1.png') !important;
+  background-size: cover !important;
+}
+
+.statsbox {
+  background-color: #002F5D !important;
+}
+
+.tablestats {
+  @extend .tablerecentflights;
+  > tbody > tr {
+    > td {
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}
