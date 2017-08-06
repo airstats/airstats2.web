@@ -1,44 +1,23 @@
-import React, {Component} from 'react'
-import {Container, Dropdown, Image, Input, Menu} from 'semantic-ui-react'
-import {connect} from 'react-redux'
-import {withRouter} from 'react-router'
-import {Link} from 'react-router-dom'
+import React from 'react'
+import NavBar from '../NavBar/NavBar'
+import {Container, Grid, Image, Input} from 'semantic-ui-react'
 import logo from './logo.png'
 import './Header.scss'
 
-class NavBar extends Component {
-  state = {}
-
-  render() {
+export default class Header extends React.Component {
+  render () {
     return (
-      <Menu size='large' inverted stackable>
+      <section className='blueHeader'>
         <Container>
-          <Menu.Item header fitted>
-            <Image height='50' src={logo} style={{
+          <Grid stackable>
+            <Grid.Column color='blue' width={2}><Image height='50' src={logo} style={{
               marginRight: '1.5em'
-            }}/>
-          </Menu.Item>
-
-          <Menu.Item as={Link} to='/'>Home</Menu.Item>
-          <Menu.Item as={Link} to='/live'>Live Flight Tracking</Menu.Item>
-          <Dropdown item simple text='Statistics'>
-            <Dropdown.Menu>
-              <Dropdown.Item as={Link} to='/statistics/top'>Top Airports</Dropdown.Item>
-              <Dropdown.Item as={Link} to='/statistics/ifr-route'>Route Analyzer</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Dropdown item simple text='About'>
-            <Dropdown.Menu>
-              <Dropdown.Item as={Link} to='/about'>About AirStats</Dropdown.Item>
-              <Dropdown.Item as={Link} to='/about/faq'>FAQ</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Menu.Item as='a' href='https://www.aircharts.org' target='_blank'>AirCharts</Menu.Item>
-          <Menu.Item><Input action={{color: 'orange', icon: 'search'}} placeholder='Search Callsign, CID, Apt' /></Menu.Item>
+            }} /></Grid.Column>
+            <Grid.Column color='blue' verticalAlign='middle' width={9}><Input fluid action={{color: 'orange', icon: 'search'}} placeholder='Search Callsign, CID, Airport ICAO' size='small' /></Grid.Column>
+          </Grid>
         </Container>
-      </Menu>
+        <NavBar />
+      </section>
     )
   }
 }
-
-export default withRouter(connect()(NavBar))
