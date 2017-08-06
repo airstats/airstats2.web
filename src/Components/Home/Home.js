@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import { Header, Grid, Segment, Container } from 'semantic-ui-react'
+import { Header, Grid, Container } from 'semantic-ui-react'
 import { fetchGeneral } from '../../ducks/general.js'
 import { fetchRecent } from '../../ducks/recent.js'
 import TableRecent from './TableRecent/TableRecent'
