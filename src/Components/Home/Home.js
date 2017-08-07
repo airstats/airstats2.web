@@ -42,7 +42,7 @@ class Home extends Component {
             </Grid.Row>
             <Grid.Row columns={1}>
               <Grid.Column width={16} className='youtube'>
-                <iframe src='https://www.youtube.com/embed/videoseries?list=PLMeSvCXcQ9u8ts4Orq0cOIjvuDpSEKLPD&amp;showinfo=0&amp;ecver=1' frameBorder='0' allowFullScreen />
+                <iframe title='AirStats Timelapse' src='https://www.youtube.com/embed/videoseries?list=PLMeSvCXcQ9u8ts4Orq0cOIjvuDpSEKLPD&amp;showinfo=0&amp;ecver=1' frameBorder='0' allowFullScreen />
               </Grid.Column>
             </Grid.Row>
           </Grid>
