@@ -4,5 +4,11 @@
     &>.column:not(.row) {
       padding-bottom: 0;
     }
+    .blueText input {
+      background-color: #002f5d !important;
+      color: #fff !important;
+      border-color: #fff !important;
+      border-right: 0;
+    }
   }
 }

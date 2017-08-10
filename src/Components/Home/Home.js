@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import { Header, Grid, Segment, Container } from 'semantic-ui-react'
+import { Header, Grid, Container } from 'semantic-ui-react'
 import { fetchGeneral } from '../../ducks/general.js'
 import { fetchRecent } from '../../ducks/recent.js'
 import TableRecent from './TableRecent/TableRecent'
@@ -28,16 +28,23 @@ class Home extends Component {
     return (
       <section>
         <Container style={{ marginTop: '1rem' }}>
-          <Grid columns={2}>
-            <Grid.Column width={11}>
-              <Header as='h4' attached='top' block>Recent Flights</Header>
-              <TableRecent recent={this.props.recent} />
-            </Grid.Column>
-            <Grid.Column width={5}>
-              <Header as='h4' attached='top' block>Stats</Header>
-              <TableStats general={this.props.general} />
-              <Header as='h4' textAlign='right' attached='bottom' block>Since 30 April, 2017</Header>
-            </Grid.Column>
+          <Grid>
+            <Grid.Row columns={2}>
+              <Grid.Column width={11}>
+                <Header as='h4' attached='top' block>Recent Flights</Header>
+                <TableRecent recent={this.props.recent} />
+              </Grid.Column>
+              <Grid.Column width={5}>
+                <Header as='h4' attached='top' block>Stats</Header>
+                <TableStats general={this.props.general} />
+                <Header as='h4' textAlign='right' attached='bottom' block>Since 30 April, 2017</Header>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={1}>
+              <Grid.Column width={16} className='youtube'>
+                <iframe title='AirStats Timelapse' src='https://www.youtube.com/embed/videoseries?list=PLMeSvCXcQ9u8ts4Orq0cOIjvuDpSEKLPD&amp;showinfo=0&amp;ecver=1' frameBorder='0' allowFullScreen />
+              </Grid.Column>
+            </Grid.Row>
           </Grid>
         </Container>
       </section>

@@ -13,7 +13,7 @@ export default class Header extends React.Component {
             <Grid.Column color='blue' width={2}><Image height='50' src={logo} style={{
               marginRight: '1.5em'
             }} /></Grid.Column>
-            <Grid.Column color='blue' verticalAlign='middle' width={9}><Input fluid action={{color: 'orange', icon: 'search'}} placeholder='Search Callsign, CID, Airport ICAO' size='small' /></Grid.Column>
+            <Grid.Column color='blue' verticalAlign='middle' width={14}><Input fluid action={{color: 'orange', icon: 'search'}} className='blueText' placeholder='Search Callsign, CID, Airport ICAO' size='small' /></Grid.Column>
           </Grid>
         </Container>
         <NavBar />
